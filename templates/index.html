@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Forecast</title>
+    <style>
+        /* Add custom CSS styles for buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn-green {
+            background-color: green;
+            color: white;
+        }
+        .btn-blue {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Weather Forecast</h1>
+<h2>{{ city }}</h2>
+<h3>{{ temp }}&#8457;</h3>
+<p>
+    <!-- Use custom classes for buttons -->
+    <a href="{% url 'temp_somewhere' %}" class="btn btn-green">Check Other Places</a>
+    <a href="." class="btn btn-blue">Home</a>
+</p>
+</body>
+</html>
