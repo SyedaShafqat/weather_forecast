@@ -18,4 +18,9 @@ This Django-based application leverages the power of the Open Meteo API to fetch
 - Click on "Explore Other Places" to view weather information for a random city.
 - Enjoy exploring weather conditions around the world!
 
+## Output
+![Alt text](https://github.com/SyedaShafqat/weather_forecast/blob/master/weather.png)
+
+
+
 
